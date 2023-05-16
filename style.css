@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300;400;500;700&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+picture {
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+}
+
+picture div {
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+}
+
+picture div h1 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+}
+
+.overall-form-container {
+}
+
+.overall-form-container p:nth-child(1) {
+    padding: 0 2rem 1rem 3rem;
+    font-weight: 400;
+}
+.overall-form-container p:nth-child(2) {
+    padding: 0 2rem 3rem 3rem;
+    font-weight: 400;
+}
+
+.forms-container {
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.forms-container h1 {
+    font-size: 22px;
+}
+
+.forms {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.label-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+input:required:invalid {
+    outline-color: red;
+}
+
+input:focus {
+    outline-color: rgb(80, 80, 248);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+:invalid {
+    outline-color: rgb(248, 108, 108)(252, 78, 78);
+}
+
+.error-message {
+    color: red;
+    font-size: 8px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+form button {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 1rem 2rem;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overall-form-container p:nth-child(3) {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    font-size: 12px;
+}
